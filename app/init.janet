@@ -82,12 +82,12 @@
   [:main
    [:h1 (presentation :title)]
    [:section
-    [:h1 "Kapitoly"]
+    [:h1 "ምዕራፎች"]
     (seq [chapter :in (presentation :chapters)]
       [:p
        [:h3 (chapter :title)]
-       [:span (length (chapter :slides)) " slajdy"]])]
-   [:nav {:class "f-row"} [:a {:href "/edit"} "editovat"] [:a {:href "/start"} "start"]]])
+       [:span (length (chapter :slides)) " ስላይዶች"]])]
+   [:nav {:class "f-row"} [:a {:href "/edit"} "ለማረም"] [:a {:href "/start"} "ጀምር"]]])
 
 # Handlers
 (defn /index
